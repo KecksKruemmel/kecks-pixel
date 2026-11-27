@@ -1,5 +1,11 @@
 # Kecks Pixel
 
+<p>
+  <a href="https://github.com/KecksKruemmel/kecks-pixel/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/KecksKruemmel/kecks-pixel?style=flat&labelColor=0c0912&color=f59b5b&logo=github&logoColor=white"></a>
+  <a href="https://github.com/KecksKruemmel/kecks-pixel/releases"><img alt="Downloads gesamt" src="https://img.shields.io/github/downloads/KecksKruemmel/kecks-pixel/total?style=flat&labelColor=0c0912&color=f59b5b&label=Downloads"></a>
+  <img alt="Lizenz OFL 1.1" src="https://img.shields.io/badge/Lizenz-OFL%201.1-9a80f5?style=flat&labelColor=0c0912">
+</p>
+
 **A free pixel font with soft-rounded corners – for games, thumbnails, Minecraft edits and retro designs.**
 Kostenlose Pixelschrift mit leicht abgerundeten Pixeln – für Games, Thumbnails, Minecraft-Edits und Retro-Designs.
 
