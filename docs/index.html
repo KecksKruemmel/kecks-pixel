@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kecks Pixel – free pixel font</title>
+<meta name="description" content="Kecks Pixel: kostenlose Pixelschrift unter der SIL Open Font License. Frei für private und kommerzielle Projekte.">
+<style>
+@font-face { font-family: "Kecks Pixel"; src: url("fonts/KecksPixel-Regular.ttf") format("truetype"); font-display: swap; }
+:root { --bg: #0c0912; --ink: #f4efe6; --beige: #e8d8bd; --lila: #9a80f5; --blau: #5a8cff; --orange: #f59b5b; --line: #2a2238; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Kecks Pixel", monospace; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 48px 20px 80px; }
+h1 { font-size: clamp(50px, 12vw, 120px); font-weight: 400; margin: 0; line-height: 1.1; color: var(--orange); }
+.tag { color: var(--beige); font-size: 20px; margin: 18px 0 32px; }
+.grad { height: 4px; border: 0; margin: 40px 0; background: linear-gradient(90deg, var(--blau), var(--lila), var(--orange)); }
+.btns { display: flex; flex-wrap: wrap; gap: 14px; }
+a.btn { text-decoration: none; color: var(--bg); background: var(--orange); padding: 14px 26px; border-radius: 10px; font-size: 20px; }
+a.btn.ghost { background: transparent; color: var(--beige); border: 2px solid var(--line); }
+a.btn:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--lila); outline-offset: 3px; }
+label { display: block; color: var(--beige); margin-bottom: 10px; font-size: 20px; }
+.tester { width: 100%; background: transparent; color: var(--ink); border: 2px solid var(--line); border-radius: 10px; padding: 16px 18px; font: inherit; font-size: 40px; }
+.sizes { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.sizes button { background: transparent; color: var(--beige); border: 2px solid var(--line); border-radius: 10px; padding: 8px 16px; font: inherit; font-size: 20px; cursor: pointer; }
+.sizes button[aria-pressed="true"] { border-color: var(--orange); color: var(--orange); }
+.set { font-size: clamp(24px, 5vw, 40px); line-height: 1.5; word-break: break-word; }
+.l { color: var(--lila); } .b { color: var(--blau); } .o { color: var(--orange); }
+.small { color: #b9b1a3; font-size: 20px; line-height: 1.6; }
+footer { color: #8d8598; font-size: 20px; margin-top: 60px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Kecks Pixel</h1>
+  <p class="tag">FREE PIXEL FONT - SIL OPEN FONT LICENSE</p>
+  <div class="btns">
+    <a class="btn" href="https://github.com/KecksKruemmel/kecks-pixel/releases/latest">Download</a>
+    <a class="btn ghost" href="https://github.com/KecksKruemmel/kecks-pixel">GitHub</a>
+  </div>
+  <hr class="grad">
+  <label for="t">Schreib selbst / Type something</label>
+  <input id="t" class="tester" value="Bedwars mit den Jungs - GG!">
+  <div class="sizes" role="group" aria-label="Schriftgröße">
+    <button type="button" data-s="20">20</button><button type="button" data-s="40" aria-pressed="true">40</button><button type="button" data-s="80">80</button>
+  </div>
+  <hr class="grad">
+  <div class="set">ABCDEFGHIJKLMNOPQRSTUVWXYZ ÄÖÜ<br><span class="l">abcdefghijklmnopqrstuvwxyz äöüß</span><br><span class="b">0123456789</span> <span class="o">€ &amp; @ % # ? !</span></div>
+  <hr class="grad">
+  <p class="small">Kecks Pixel ist kostenlos – für Videos, Thumbnails, Logos, Games und Webseiten, privat und kommerziell. Benutzen, einbetten, verändern und weitergeben ist erlaubt. Nur die Schriftdatei allein verkaufen nicht (SIL OFL 1.1).</p>
+  <p class="small">Free for personal and commercial use. Use, embed, modify and share it – just don't sell the font file by itself (SIL OFL 1.1).</p>
+  <footer>© 2026 KecksKruemmel · SIL Open Font License 1.1</footer>
+</div>
+<script>
+const t = document.getElementById("t");
+document.querySelectorAll(".sizes button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".sizes button").forEach(x => x.setAttribute("aria-pressed", "false"));
+  b.setAttribute("aria-pressed", "true");
+  t.style.fontSize = b.dataset.s + "px";
+}));
+</script>
+</body>
+</html>
