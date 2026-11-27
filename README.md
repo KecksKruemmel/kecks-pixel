@@ -24,6 +24,8 @@ Sharpest at sizes in steps of 10 px (10, 20, 30, 40 …) – one font pixel is e
 
 Credit is appreciated but not required: *Font: Kecks Pixel by KecksKruemmel*
 
+Kecks Pixel is an independent project and is not affiliated with, endorsed by or connected to Mojang Studios or Microsoft. "Minecraft" is a trademark of Mojang Synergies AB.
+
 ## Character set
 
 `A–Z a–z Ä Ö Ü ä ö ü ß 0–9 . , : ; ! ? - _ + = / \ ( ) [ ] ' " # % & * @ < > ^ | € °`
